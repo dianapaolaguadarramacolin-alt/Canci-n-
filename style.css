@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* VIDEO DE FONDO */
+#videoFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* CAPA OSCURA */
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* TEXTO */
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: fadeIn 3s;
+}
+
+h2 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    animation: fadeIn 4s;
+}
+
+.mensaje {
+    margin-top: 20px;
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* AUDIO */
+audio {
+    width: 300px;
+    margin-top: 20px;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
